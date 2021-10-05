@@ -34,7 +34,6 @@ const categories = []
 function moviesCategory() {
     for (const movie of movies) {
         moviesCategories.push(movie.categories)
-        moviesCategories.join(',')
     }
     
     console.log(moviesCategories)
