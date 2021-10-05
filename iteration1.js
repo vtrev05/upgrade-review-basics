@@ -10,6 +10,7 @@ const movies = [
 ]
 
 let moviesCategories = []
+
 /* let firstCategories = []
 let secondCategories = []
 let thirdCategories = []
