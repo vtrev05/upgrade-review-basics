@@ -1,6 +1,6 @@
 'use strict';
 
-//ITERATION 2
+//ITERATION 3
 
 const users = [
     {name: 'Manolo el del bombo',
