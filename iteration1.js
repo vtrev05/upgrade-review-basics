@@ -9,33 +9,36 @@ const movies = [
     {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
 ]
 
-/* const moviesCategories = []
-const categories = []
+let moviesCategories = []
+let firstCategories = []
+let secondCategories = []
+let thirdCategories = []
+let fourthCategories = []
+let concatenated = []
 
 function moviesCategory() {
     for (const movie of movies) {
         moviesCategories.push(movie.categories)
     }
-    for (let i = 0; i < moviesCategories.length; i++) {
-        if (moviesCategories[i].includes(moviesCategories[i])) {
-            console.log('repetido')
-        } else {
-            categories.push(moviesCategories[i])
+    firstCategories = moviesCategories[0]
+    secondCategories = moviesCategories[1]
+    thirdCategories = moviesCategories [2]
+    fourthCategories = moviesCategories[3]
+    concatenated = firstCategories.concat(secondCategories).concat(thirdCategories).concat(fourthCategories)
+
+    const onlyOne = [];
+
+    for(let i = 0; i < concatenated.length; i++) {
+    
+    const elemento = concatenated[i];
+    
+    if (!onlyOne.includes(concatenated[i])) {
+        onlyOne.push(elemento);
         }
     }
-    console.log(categories)
+
+    console.log(`las categorías únicas de las películas son: ${onlyOne}`);
 }
 
-
-moviesCategory() */
-const moviesCategories = []
-const categories = []
-
-function moviesCategory() {
-    for (const movie of movies) {
-        moviesCategories.push(movie.categories)
-    }
-    
-    console.log(moviesCategories)
-}
 moviesCategory()
+
