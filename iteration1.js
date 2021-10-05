@@ -10,7 +10,7 @@ const movies = [
 ]
 
 let moviesCategories = []
-let firstCategories = []
+/* let firstCategories = []
 let secondCategories = []
 let thirdCategories = []
 let fourthCategories = []
@@ -38,7 +38,16 @@ function moviesCategory() {
     }
 
     console.log(`las categorías únicas de las películas son: ${onlyOne}`);
+} */
+
+/* moviesCategory() */
+
+for (const movie of movies) {
+    for (const category of movie.categories) {
+        if (!moviesCategories.includes(category)) {
+            moviesCategories.push(category)
+        }
+    }
+    
 }
-
-moviesCategory()
-
+console.log(moviesCategories)
